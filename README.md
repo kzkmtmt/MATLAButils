@@ -2,6 +2,8 @@
 
 A set of utility functions to efficiently organize, filter, and process `table` data in MATLAB.
 
+For a detailed explanation and background of these tools (in Japanese), please refer to this [Qiita article](https://qiita.com/km_MATLAB_Amb/private/fe787b7e2ad38d59239f).
+
 ## List of Functions
 
 - `filterTable`: Filters a table by specific variable values and extracts the rows that meet the criteria.
