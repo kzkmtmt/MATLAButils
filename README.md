@@ -1,1 +1,1 @@
-# Utility functions for MATLAB's table data
+# Utility functions for MATLAB
