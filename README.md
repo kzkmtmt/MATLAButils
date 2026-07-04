@@ -1,6 +1,6 @@
-# Utility functions for MATLAB
+# Utility functions for MATLAB's table data
 
-A set of utility functions to efficiently organize, filter, and process `table` data in MATLAB.
+A set of utility functions to quickly organize `table` data in MATLAB.
 
 For a detailed explanation and background of these tools (in Japanese), please refer to this [Qiita article](https://qiita.com/km_MATLAB_Amb/private/fe787b7e2ad38d59239f).
 
