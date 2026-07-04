@@ -1,4 +1,5 @@
 # Utility functions for MATLAB's table data
+[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=kzkmtmt/matlab-table-utils&file=demo.m)
 
 A set of utility functions to quickly organize `table` data in MATLAB.
 
