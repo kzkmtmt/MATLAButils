@@ -1,5 +1,5 @@
 function [Tfilt, idx] = filterTable(T, filterVar, filterValue)
-%FILTERTABLE Filters a table by specific variable values
+%FILTERTABLE Filters rows by specified variable–value pairs.
 %
 %   [Tfilt, idx] = filterTable(T, filterVar1, filterValue1, filterVar2, filterValue2, ...)
 %
@@ -9,33 +9,17 @@ function [Tfilt, idx] = filterTable(T, filterVar, filterValue)
 %       filterValue   - Value(s) to filter by
 %
 %   Outputs:
-%       Tfilt         - Table containing only the rows that meet the criteria (table)
-%       idx           - Logical index of the rows that met the criteria (logical vector)
+%       Tfilt         - Table containing only the rows that match the specified values (table)
+%       idx           - Logical index of the rows that matched the specified values (logical vector)
 %
 %   Example:
-%       T = table(["A";"A";"B";"B"], [1;2;1;2], [10;20;30;40], 'VariableNames', ["Name", "ID", "Value"]);
-%       [Tfilt, idx] = filterTable(T, "Name", "A", "ID", 1);
-%       % Tfilt contains the rows where Name=="A" and ID==1
+%       [X, Y, Trial] = ndgrid(1:2, 1:2, 1:3);
+%       Z = X .* Y + 0.1 * randn(size(X));
+%       T = table(X(:), Y(:), Trial(:), Z(:), 'VariableNames', ["X", "Y", "Trial", "Z"]);
+%       [Tfilt, idx] = filterTable(T, "X", 1, "Y", 2);
+%       % Tfilt is a 3x4 table containing rows where X==1 and Y==2
 %
-% Copyright 2026 Kazuki Matsumoto, 
-% 
-% Permission is hereby granted, free of charge, to any person obtaining a copy of
-% this software and associated documentation files (the "Software"), to deal in
-% the Software without restriction, including without limitation the rights to
-% use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
-% of the Software, and to permit persons to whom the Software is furnished to do
-% so, subject to the following conditions:
-% 
-% The above copyright notice and this permission notice shall be included in all
-% copies or substantial portions of the Software.
-% 
-% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-% SOFTWARE.
+% Author: Kazuki Matsumoto
 
 arguments
     T table
