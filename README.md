@@ -2,7 +2,7 @@
 
 A set of utility functions to quickly organize `table` data in MATLAB.
 
-For a detailed explanation and background of these tools (in Japanese), please refer to this [Qiita article](https://qiita.com/km_MATLAB_Amb/private/fe787b7e2ad38d59239f).
+For a detailed explanation and background of these tools (in Japanese), please refer to this [article](https://qiita.com/km_MATLAB_Amb/items/fe787b7e2ad38d59239f).
 
 ## List of Functions
 
